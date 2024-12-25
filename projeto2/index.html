@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    
+    <div class="campo">
+        <h1 id="titulo">Cadastro de carros</h1>
+        <p id="subtitulo">Complete suas informações</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+
+            <div class="campo">
+                <label for="ano"><strong>Data de nascimento</strong></label>
+                <input type="text" name="ano" id="ano" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email">
+        </div>
+        
+        <div class="campo">
+            <label><strong>Qual tipos de carro voce curte?</strong></label>
+            <label>
+                <input type="radio" name="CarDastro" value="esportivo" checked>Esportivo
+            </label>
+            <label>
+                <input type="radio" name="CarDastro" value="eletrico">Elétrico
+            </label>
+            <label>
+                <input type="radio" name="CarDastro" value="sedan">Sedan
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="uso"><strong>Tipo de uso do carro</strong></label>
+            <select id="uso">
+                <option selected disabled value="">Selecione</option>
+                <option>Pessoal</option>
+                <option>Trabalho</option>
+                <option>Competição</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Quais sistemas de um carro você mais valoriza?</strong></label><br><br>
+                <input type="checkbox" id="sistemas1" name="sistemas1" value="Freio ABS">
+                <label for="sistemas1"></label>Freio ABS</label>
+                <input type="checkbox" id="sistemas2" name="sistemas2" value="Controle de Tração">
+                <label for="sistemas2"></label>Controle de Tração</label>
+                <input type="checkbox" id="sistemas3" name="sistemas3" value="Suspensão Avançada">
+                <label for="sistemas3"></label>Suspensão Avançada</label>
+                <input type="checkbox" id="sistemas4" name="sistemas4" value="Sistema de Som">
+                <label for="sistemas4"></label>Sistema de Som</label>
+                <input type="checkbox" id="sistemas5" name="sistemas5" value="Ar-Condicionado">
+                <label for="sistemas5"></label>Ar-Condicionado</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label><strong>Conte um pouco sobre o porque voce prefere esse estilo de carro?</strong></label>
+            <textarea row="6" style="width: 26em" id="prefere" name="prefere"></textarea>
+        </div>
+
+        <button class="botao" type="submit">Concluído</button>
+
+    </form>
+
+</body>
+</html>
